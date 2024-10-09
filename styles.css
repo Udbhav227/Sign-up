@@ -1,3 +1,9 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 @font-face {
   font-family: 'Norse';
   src: url('fonts/Norse-Bold/Norse-Bold.woff2') format('woff2'),
@@ -5,4 +11,38 @@
   font-weight: bold;
   font-style: normal;
   font-display: swap;
+}
+
+body {
+  display: flex;
+  height: 100vh;
+}
+
+#side-bar {
+  width: 40%;
+  background: url(images/cover.jpg) no-repeat center center/cover;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.side-bar-heading {
+  font-family: 'Norse', sans-serif;
+  font-size: 5.2rem;
+  display: flex;
+  justify-content: center;
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 18px;
+  margin-top: 28%;
+}
+
+.side-bar-heading .logo {
+  height: 76px;
+  margin-right: 2px;
+}
+
+.side-bar-footer {
+  text-align: center;
+  margin-bottom: 16px;
 }
