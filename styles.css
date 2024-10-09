@@ -1,7 +1,15 @@
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+
+.ysabeau-infant-body {
+  font-family: "Ysabeau Infant", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: bold;
+  font-style: normal;
 }
 
 @font-face {
@@ -16,10 +24,11 @@
 body {
   display: flex;
   height: 100vh;
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
 }
 
 #side-bar {
-  width: 40%;
+  min-width: 40%;
   background: url(images/cover.jpg) no-repeat center center/cover;
   color: white;
   display: flex;
@@ -38,11 +47,117 @@ body {
 }
 
 .side-bar-heading .logo {
-  height: 76px;
+  height: 80px;
   margin-right: 2px;
 }
 
 .side-bar-footer {
   text-align: center;
   margin-bottom: 16px;
+}
+
+.side-bar-footer a:link,
+.side-bar-footer a:visited,
+.side-bar-footer a:active {
+  color: #a7a095;
+}
+
+.side-bar-footer a:hover {
+  color: #ae7656;
+}
+
+.right-container {
+  background-color:  #f9fbfa;
+  display: flex;
+  flex-direction: column;
+  font-size: 1.5rem;
+  gap: 36px;
+  font-weight: 500;
+}
+
+.form-top {
+  padding: 100px 150px 0 26px;
+}
+
+.form-container {
+  background-color: white;
+  padding: 18px 150px 18px 26px;
+}
+
+.form-heading {
+  margin-bottom: 18px;
+  font-weight: bold;
+}
+
+.form-row {
+  color: #5D6063;
+  display: flex;
+  gap: 36px;
+  margin-bottom: 18px;
+}
+
+.form-element {
+  display: flex;
+  flex-direction: column;
+  font-size: .7rem;
+  font-weight: bold;
+}
+
+.form-row input {
+  border: 1px solid #D6D9DC;
+  border-radius: 4px;
+  padding: 8px;
+  width: 36ch;
+  font-size: 15px;
+}
+
+.form-row input:focus {
+  border: 1px solid blue; /* Set border color on focus */
+  box-shadow: 3px 3px 6px 0px rgba(0,0,0,0.5); /* Box shadow */
+  outline: none; /* Remove the default outline */
+}
+
+.form-row input[type="password"]:invalid {
+  border: 1px solid #D55C5F;
+  color: #D55C5F;
+}
+
+.form-bottom {
+  font-size: .9rem;
+  padding-left: 26px;
+}
+
+.form-bottom a:active,
+.form-bottom a:visited {
+  color: #884621;
+}
+
+.form button {
+  font-size: 16px;
+  font-weight: bold;
+
+  color: #FFFFFF;
+  background-color: #884621;
+
+  border: none;
+  border-radius: 5px;
+
+  margin: 26px 0px 26px 0;
+  padding: 10px 40px;
+  cursor: pointer;
+}
+
+.form button:hover {
+  opacity: .5;
+}
+
+.form-bottom a:link,
+.form-bottom a:visited,
+.form-bottom a:active {
+  color: #884621;
+}
+
+.form-bottom a:hover {
+  color: #884621;
+  opacity: .5;
 }
